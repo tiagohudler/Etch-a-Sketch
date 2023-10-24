@@ -1,0 +1,9 @@
+#drawpad {
+    display: flex;
+    height: 1000px;
+}
+
+#input-area {
+    background-color: bisque;
+    border: 3px solid black;
+}
