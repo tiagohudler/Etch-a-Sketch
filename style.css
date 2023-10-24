@@ -15,11 +15,15 @@ body {
     border: 3px solid black;
     padding: 8px;
     width: fit-content;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .box {
     height: 5px;
     width: 5px;
     background-color: green;
+}
+
+#clear-button {
+    margin-bottom: 50px;
 }

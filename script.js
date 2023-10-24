@@ -15,9 +15,9 @@ function addDivs() {
     }
 
 }
-//adds button event listener
-const button = document.querySelector('button');
-button.addEventListener('click', () => {
+//adds enter button event listener
+const enterbutton = document.querySelector('#enter-button');
+enterbutton.addEventListener('click', () => {
     addDivs();
     document.querySelector('input').value = '';
     const boxes = document.querySelectorAll('.box');
@@ -28,3 +28,10 @@ button.addEventListener('click', () => {
     });
 });
 
+const clearButton = document.querySelector('#clear-button');
+clearButton.addEventListener('click', () => {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((elem) => {
+        elem.style.backgroundColor = 'green';
+    });
+});
