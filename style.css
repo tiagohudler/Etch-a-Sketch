@@ -1,9 +1,16 @@
 #drawpad {
     display: flex;
-    height: 1000px;
+    flex-wrap: wrap;
+    border: 4px solid black;
 }
 
 #input-area {
     background-color: bisque;
     border: 3px solid black;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: green;
 }
