@@ -4,7 +4,7 @@ function addDivs() {
     let body = document.querySelector('body');
     //adds the drawpad space
     drawpad.setAttribute('id', 'drawpad');
-    drawpad.style.width = `${input * 20}px`;
+    drawpad.style.width = `${input * 5}px`;
     body.appendChild(drawpad);
     //adds the grid
     let blockNumber = input*input;
@@ -20,4 +20,11 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
     addDivs();
     document.querySelector('input').value = '';
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((elem) => {
+        elem.addEventListener('mouseover', () => {
+            elem.style.backgroundColor = 'black';
+        });
+    });
 });
+
