@@ -35,3 +35,13 @@ clearButton.addEventListener('click', () => {
         elem.style.backgroundColor = 'green';
     });
 });
+
+const colorButton = document.querySelector('#color-button');
+colorButton.addEventListener('click', () => {
+    const boxes = document.querySelectorAll('.box');
+    let colorInput = document.querySelector('#color-input').value;
+    boxes.forEach((elem) => {
+        elem.style.backgroundColor = `${colorInput}`;
+    });
+    document.querySelector('#color-input').value = '';
+});
